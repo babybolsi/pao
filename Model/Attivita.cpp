@@ -5,10 +5,10 @@
 
 namespace Model{
 
-    Attivita::Attivita(const QString descrizione, const QDate data)
-        : descrizione(descrizione),
-        data(data)
-    {
+Attivita::Attivita(const QString descrizione, const QDate data)
+    : descrizione(descrizione),
+    data(data)
+{
 }
 
 Attivita::~Attivita(){
