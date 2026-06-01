@@ -1,0 +1,26 @@
+# --- qmake / Qt build artifacts ---
+*.o
+*.obj
+moc_*.cpp
+moc_*.h
+qrc_*.cpp
+ui_*.h
+Makefile
+Makefile.*
+.qmake.stash
+*.pro.user
+*.pro.user.*
+
+# Build output dirs
+debug/
+release/
+build/
+build-*/
+
+# Eseguibile (stesso nome del progetto, senza estensione)
+/GestioneAttivita
+*.exe
+
+# --- vari ---
+*.autosave
+.DS_Store
