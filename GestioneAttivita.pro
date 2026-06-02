@@ -1,4 +1,20 @@
 QT += core gui widgets
 CONFIG += c++17
 
-SOURCES += main.cpp
+SOURCES += \
+    main.cpp \
+    Model/Attivita.cpp \
+    Model/Appuntamento.cpp \
+    Model/Compito.cpp \
+    Model/Promemoria.cpp \
+    Model/Registro.cpp
+
+HEADERS += \
+    Model/Attivita.h \
+    Model/VisitorAttivita.h \
+    Model/Appuntamento.h \
+    Model/Compito.h \
+    Model/Promemoria.h \
+    Model/Registro.h
+
+TARGET = GestioneAttivita
