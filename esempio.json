@@ -1,0 +1,21 @@
+[
+    {
+        "data": "2026-06-15",
+        "descrizione": "Visita medica",
+        "luogo": "Ospedale Civile",
+        "orario": "10:30:00",
+        "tipo": "Appuntamento"
+    },
+    {
+        "completato": false,
+        "data": "2026-06-30",
+        "descrizione": "Consegnare relazione PAO",
+        "tipo": "Compito"
+    },
+    {
+        "data": "2026-06-01",
+        "descrizione": "Chiamare nonno",
+        "priorita": 2,
+        "tipo": "Promemoria"
+    }
+]

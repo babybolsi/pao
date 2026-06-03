@@ -5,6 +5,7 @@
 #define MODEL_REGISTRO_H
 
 #include <vector>
+#include <QString>
 
 #include "Attivita.h"
 
@@ -28,6 +29,10 @@ class Registro{
     Attivita* get(const int indice ) const ;
 
     int size() const;
+
+    // Ritornano true se l'operazione riesce, false su errore o JSON non valido.                                                 
+    bool salva(const QString& nomeFile ) const;                                         
+    bool carica(const QString& nomeFile) ;         
 };
 }
 

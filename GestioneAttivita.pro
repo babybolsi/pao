@@ -7,7 +7,10 @@ SOURCES += \
     Model/Appuntamento.cpp \
     Model/Compito.cpp \
     Model/Promemoria.cpp \
-    Model/Registro.cpp
+    Model/Registro.cpp \
+    Model/VisitorJson.cpp \
+    Model/LettoreJson.cpp \
+    Model/VisitorFiltroTipo.cpp
 
 HEADERS += \
     Model/Attivita.h \
@@ -15,6 +18,9 @@ HEADERS += \
     Model/Appuntamento.h \
     Model/Compito.h \
     Model/Promemoria.h \
-    Model/Registro.h
+    Model/Registro.h \
+    Model/VisitorJson.h \
+    Model/LettoreJson.h \
+    Model/VisitorFiltroTipo.h
 
 TARGET = GestioneAttivita
