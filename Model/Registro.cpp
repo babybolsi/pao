@@ -31,6 +31,12 @@ Registro& Registro::rimuovi(const int indice) {
     attivita.erase(attivita.begin() + indice);
     return *this;
 }
+Registro& Registro::sostituisci(const int indice, Attivita* attivita ){
+    delete this->attivita[indice];
+    this->attivita[indice]= attivita ;
+    
+    return *this;
+}
 
 Attivita* Registro::get(const int indice) const{
     return attivita[indice];

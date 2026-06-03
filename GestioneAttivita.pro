@@ -10,7 +10,12 @@ SOURCES += \
     Model/Registro.cpp \
     Model/VisitorJson.cpp \
     Model/LettoreJson.cpp \
-    Model/VisitorFiltroTipo.cpp
+    Model/VisitorFiltroTipo.cpp \
+    View/AbstractEditorAttivita.cpp \
+    View/EditorAppuntamento.cpp \
+    View/EditorCompito.cpp \
+    View/EditorPromemoria.cpp \
+    View/VisitorFormEdit.cpp
 
 HEADERS += \
     Model/Attivita.h \
@@ -21,6 +26,11 @@ HEADERS += \
     Model/Registro.h \
     Model/VisitorJson.h \
     Model/LettoreJson.h \
-    Model/VisitorFiltroTipo.h
+    Model/VisitorFiltroTipo.h \
+    View/AbstractEditorAttivita.h \
+    View/EditorAppuntamento.h \
+    View/EditorCompito.h \
+    View/EditorPromemoria.h \
+    View/VisitorFormEdit.h
 
 TARGET = GestioneAttivita

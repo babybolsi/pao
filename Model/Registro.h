@@ -26,6 +26,8 @@ class Registro{
 
     Registro& rimuovi( const int indice);  
 
+    Registro& sostituisci(const int indice, Attivita* attivita);
+
     Attivita* get(const int indice ) const ;
 
     int size() const;
