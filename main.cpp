@@ -1,12 +1,13 @@
 #include <QApplication>
 #include <QWidget>
 
-int main(int argc, char* argv[]) {
-    QApplication app(argc, argv) ;
-    QWidget window;
-    window.setWindowTitle("Gestore Attività" );
-    window.resize(800, 500);
-    window.show() ;
+#include "View/MainWindow.h"
+
+int main(int argc, char* argv[]){
+    QApplication app(argc, argv);
+
+    View::MainWindow window ;
+    window.show();
 
     return app.exec();
 }

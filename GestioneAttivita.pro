@@ -15,7 +15,8 @@ SOURCES += \
     View/EditorAppuntamento.cpp \
     View/EditorCompito.cpp \
     View/EditorPromemoria.cpp \
-    View/VisitorFormEdit.cpp
+    View/VisitorFormEdit.cpp \
+    View/MainWindow.cpp
 
 HEADERS += \
     Model/Attivita.h \
@@ -31,6 +32,7 @@ HEADERS += \
     View/EditorAppuntamento.h \
     View/EditorCompito.h \
     View/EditorPromemoria.h \
-    View/VisitorFormEdit.h
+    View/VisitorFormEdit.h \
+    View/MainWindow.h
 
 TARGET = GestioneAttivita

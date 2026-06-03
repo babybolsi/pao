@@ -17,5 +17,24 @@
         "descrizione": "Chiamare nonno",
         "priorita": 2,
         "tipo": "Promemoria"
+    },
+    {
+        "data": "2026-06-05",
+        "descrizione": "Meeting Automazione",
+        "luogo": "Azienda Srl",
+        "orario": "12:00:00",
+        "tipo": "Appuntamento"
+    },
+    {
+        "completato": false,
+        "data": "2026-06-26",
+        "descrizione": "Deadline consegna automazione SAP",
+        "tipo": "Compito"
+    },
+    {
+        "completato": false,
+        "data": "2026-06-01",
+        "descrizione": "Compito Scaduto",
+        "tipo": "Compito"
     }
 ]
