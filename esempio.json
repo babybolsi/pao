@@ -7,12 +7,6 @@
         "tipo": "Appuntamento"
     },
     {
-        "completato": false,
-        "data": "2026-06-30",
-        "descrizione": "Consegnare relazione PAO",
-        "tipo": "Compito"
-    },
-    {
         "data": "2026-06-01",
         "descrizione": "Chiamare nonno",
         "priorita": 2,
@@ -36,5 +30,11 @@
         "data": "2026-06-01",
         "descrizione": "Compito Scaduto",
         "tipo": "Compito"
+    },
+    {
+        "data": "2026-06-05",
+        "descrizione": "Tagliare i capelli",
+        "priorita": 2,
+        "tipo": "Promemoria"
     }
 ]

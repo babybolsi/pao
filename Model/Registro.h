@@ -34,7 +34,7 @@ class Registro{
 
     // Ritornano true se l'operazione riesce, false su errore o JSON non valido.                                                 
     bool salva(const QString& nomeFile ) const;                                         
-    bool carica(const QString& nomeFile) ;         
+    bool carica(const QString& nomeFile,bool& saltati) ;         
 };
 }
 

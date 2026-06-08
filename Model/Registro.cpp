@@ -63,7 +63,7 @@ bool Registro::salva(const QString& nomeFile) const{
 
     return true;
 }
-bool Registro::carica(const QString& nomeFile){
+bool Registro::carica(const QString& nomeFile,bool& saltati){
     QFile file(nomeFile) ;
     if (!file.open(QIODevice::ReadOnly) ){
         return false;
@@ -82,12 +82,15 @@ bool Registro::carica(const QString& nomeFile){
     }
     attivita.clear();
 
+    saltati = false;
     LettoreJson lettore;
     QJsonArray array= documento.array() ;
     for ( const QJsonValue& valore : array) {
         Attivita* attivita_letta = lettore.leggi(valore.toObject() );
         if (attivita_letta != nullptr){
             attivita.push_back(attivita_letta) ;
+        } else {
+            saltati = true;
         }
     }
     return true;

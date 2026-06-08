@@ -353,24 +353,33 @@ void MainWindow::onAnnulla() {
     stackedWidget->setCurrentIndex(0);
 }
 
-void MainWindow::onApriFile() {
+void MainWindow::onApriFile(){
     QString percorso = QFileDialog::getOpenFileName(this, "Apri file", QString(), "File JSON (*.json)");
     if (percorso.isEmpty()) {
         return;
     }
-    if (!registro.carica(percorso)) {
+    bool saltati = false;
+    if (!registro.carica(percorso, saltati) ){
         QMessageBox::warning(this, "Errore", "Impossibile aprire il file: mancante o JSON non valido.");
         return;
     }
+
     detailBrowser->clear();
     stackedWidget->setCurrentIndex(0);
     aggiornaLista();
+    if (saltati){
+        QMessageBox::warning(this, "Importazione incompleta",
+            "Alcune attività non sono state importate perché non valide.");
+    }
 }
 
 void MainWindow::onSalvaFile() {
     QString percorso = QFileDialog::getSaveFileName(this, "Salva file", QString(), "File JSON (*.json)");
     if (percorso.isEmpty()) {
         return;
+    }
+    if (!percorso.endsWith(".json", Qt::CaseInsensitive)){
+        percorso += ".json";
     }
     if (!registro.salva(percorso)) {
         QMessageBox::warning(this, "Errore", "Impossibile salvare il file.") ;
